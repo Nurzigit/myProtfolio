@@ -12,23 +12,18 @@ import Footer from "../../components/Footer";
  */
 
 const Portfolio = () => {
-  // Get the current location using React Router's useLocation hook
   const location = useLocation();
 
-  // Scroll to the top of the page when the location changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
 
   return (
     <>
-      {/* Main Portfolio Page */}
       <main className="portfolio container">
-        {/* Display the page header */}
         <PageHeader title="Portfolio" description="View my work" />
 
         <div className="row">
-          {/* Display the list of projects */}
           <ProjectList />
         </div>
       </main>

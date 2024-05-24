@@ -13,7 +13,7 @@ import { useState } from "react";
  */
 
 export default function Image({ src, height, width, size, alt, opacity }) {
-  // State to manage image loading status
+ 
   const [loading, setLoading] = useState(true);
   return (
     <div
@@ -25,7 +25,7 @@ export default function Image({ src, height, width, size, alt, opacity }) {
         height: height ? height : "100%",
       }}
     >
-      {/* Image */}
+     
       <img
         src={src}
         className="fadeIn"
@@ -37,11 +37,11 @@ export default function Image({ src, height, width, size, alt, opacity }) {
           opacity: opacity ? opacity : "1",
         }}
         onLoad={(e) => {
-          setLoading(false); // Set loading to false when the image is loaded
+          setLoading(false); 
         }}
-        alt={alt} // Alt text for the image
+        alt={alt} 
       />
-      {/* Loading spinner */}
+     
       <div
         className="spinner"
         style={{

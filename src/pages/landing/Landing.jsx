@@ -1,5 +1,4 @@
 import Hero from "../../components/Hero";
-import Draw from "../../components/Draw";
 
 /**
  * Represents the Landing page component.
@@ -10,7 +9,6 @@ import Draw from "../../components/Draw";
  */
 
 const Landing = ({ name }) => {
-  // Inline styles for the main landing container
   const styles = {
     landing: {
       height: "calc(100% - 93px)",
@@ -22,17 +20,9 @@ const Landing = ({ name }) => {
 
   return (
     <>
-      {/* Main Landing Page */}
-      <main className="landing container" style={styles.landing}>
-        {/* Display the drawing component */}
-        <Draw />
-
-        {/* Display the hero component */}
+      <main className="landing container" style={styles.landing}> 
         <Hero name={name} />
       </main>
-
-      {/* Display the about section */}
-      {/* <About /> */}
     </>
   );
 };

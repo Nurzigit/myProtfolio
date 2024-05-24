@@ -11,7 +11,7 @@ import SocialIcons from "./SocialIcons";
  */
 
 const Hero = ({ name }) => {
-  // Styles for various elements
+  
   const styles = {
     landingImage: {
       position: "absolute",
@@ -41,7 +41,7 @@ const Hero = ({ name }) => {
   return (
     <>
       <div className="textContainer" style={styles.textContainer}>
-        {/* Animated name */}
+        
         <motion.h1
           className="name"
           style={styles.name}
@@ -51,26 +51,26 @@ const Hero = ({ name }) => {
         >
           {name}
         </motion.h1>
-        {/* Animated description */}
+       
         <motion.div
           className="description"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, type: "spring" }}
         >
-          {/* Typewriter effect for dynamic text animation without a cursor */}
+         
           <Typewriter
             className="description"
             options={{
               cursor: "",
             }}
             onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString("Software Engineer").start();
+              typewriter.changeDelay(50).typeString("Frontend Developer").start();
             }}
           />
         </motion.div>
       </div>
-      {/* Animated landing image */}
+     
       <div className="image-container">
         <motion.img
           className="landingImage"
@@ -79,10 +79,10 @@ const Hero = ({ name }) => {
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}
-          alt="Michael Yeates"
+          alt="Turman Nurzhigit"
         />
       </div>
-      {/* Displaying social icons */}
+  
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}>
         <SocialIcons />
       </motion.div>

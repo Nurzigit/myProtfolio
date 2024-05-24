@@ -33,7 +33,6 @@ const ContactInfo = ({ name, email, location }) => {
         Looking to build connections and share perspectives with talented developers working to create positive change.
       </p>
       <ul className="listInfo">
-        {/* Display Name */}
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
@@ -46,11 +45,9 @@ const ContactInfo = ({ name, email, location }) => {
             </div>
           </div>
         </li>
-        {/* Display Location */}
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
-              {/* Icon for Location */}
               <i className="icon fa-solid fa-location-pin "></i>{" "}
             </span>
             <div className="mediaWrap">
@@ -59,16 +56,13 @@ const ContactInfo = ({ name, email, location }) => {
             </div>
           </div>
         </li>
-        {/* Display Email */}
         <li>
           <div className="personalContactInfo">
             <span className="infoIcon">
-              {/* Icon for Email */}
               <i className="icon fa-solid fa-envelope "></i>{" "}
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Email</h6>
-              {/* Link to email */}
               <span className="infoValue">
                 <a href={`mailto:${email}`}>{email}</a>
               </span>

@@ -35,8 +35,8 @@ const LightDarkToggle = () => {
     const colors = !islightMode
       ? {
           // Light Colors
-          "--bg-color": "#131a22",
-          "--bg2-color": "#232f3e19",
+          "--bg-color": "#000",
+          "--bg2-color": "#000",
           "--hl-color": "#48a3c6",
           "--hl2-color": "#ea5b5c",
           "--text-color": "#f3f3f3",
